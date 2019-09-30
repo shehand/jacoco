@@ -149,9 +149,7 @@ public abstract class ReportPage implements ILinkable {
 		final HTMLElement footer = body.div(Styles.FOOTER);
 		final HTMLElement versioninfo = footer.span(Styles.RIGHT);
 		versioninfo.text("Created with ");
-		versioninfo.a(JaCoCo.HOMEURL).text("JaCoCo");
-		versioninfo.text(" ");
-		versioninfo.text(JaCoCo.VERSION);
+		versioninfo.a("https://v1-0.ballerina.io").text("Testerina");
 		footer.text(context.getFooterText());
 	}
 
